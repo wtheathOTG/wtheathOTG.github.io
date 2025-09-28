@@ -56,15 +56,13 @@ main {
 
 .about-image {
   overflow: hidden;
-  width: 40%;
   border-right: 2px solid var(--border-color);
 }
 
 .about-image img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  max-height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .about-text {
