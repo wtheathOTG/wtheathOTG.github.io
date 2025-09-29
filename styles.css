@@ -33,17 +33,16 @@ main {
 }
 
 .about {
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
-  height: 14rem;
   border: 2px solid var(--border-color);
   border-radius: 20px;
   display: flex;
+
   justify-content: flex-start;
-  object-fit: cover;
   overflow: hidden;
   background-color: var(--secondary-color);
   box-shadow: 0 0 6px black;
@@ -55,21 +54,26 @@ main {
 }
 
 .about-image {
+  flex-shrink: 0.5;
   overflow: hidden;
   border-right: 2px solid var(--border-color);
+  max-width: 25rem;
+  object-fit: contain;
 }
 
 .about-image img {
-  max-height: 100%;
-  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   object-position: center;
 }
 
 .about-text {
   flex-grow: 1;
   box-shadow: inset 0 0 4px black;
-  padding-left: 2rem;
+  padding: 0.5rem 2rem 1.25rem;
   text-align: left;
+  min-width: 15rem;
 }
 
 .project {
